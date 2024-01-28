@@ -1,0 +1,1 @@
+C:\GitHub\rust\the_rust_programming_language\projects\twelve_days_of_christmas\target\release\twelve_days_of_christmas.exe: C:\GitHub\rust\the_rust_programming_language\projects\twelve_days_of_christmas\src\main.rs
