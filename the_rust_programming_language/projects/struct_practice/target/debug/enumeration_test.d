@@ -1,0 +1,1 @@
+/home/per/Github/rust/the_rust_programming_language/projects/struct_practice/target/debug/enumeration_test: /home/per/Github/rust/the_rust_programming_language/projects/struct_practice/src/enumeration_test.rs
