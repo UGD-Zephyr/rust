@@ -1,16 +1,45 @@
 /* Programmer:          Per Stoor
  * Date:                2024-10-12
- * Last changed:        2024-10-12
+ * Last changed:        2024-10-17
  * Type of program:     Personal library file for rust modules.
  */
 
 /*
- * Module containing string to number conversion functions.
+ * Module containing string conversion functions.
  * */
-pub mod string_to_numbers {
+pub mod string_conversions {
 
     use std::io::{self, Write};
 
+        // function for reading a string.
+        // maybe work on the logic of this function some more...a lot of ChatGPT suggestions in
+        // here and there could be a better way.
+        pub fn input_to_string () -> String {
+            let mut string_buffer = String::new();
+
+            io::stdout()
+                .flush()
+                .expect("Error: Failed flushing stdout");
+
+            loop {
+                string_buffer.clear();
+
+            io::stdin()
+                .read_line(&mut string_buffer)
+                .expect("Error: Failed to read string from stdin");
+
+            let trimmed_string_buffer = string_buffer.trim();
+                    if !trimmed_string_buffer.is_empty() {
+                        break
+                    }
+                    else {
+                        println!("Error: Empty or invalid input");
+                    }
+                };
+
+        return string_buffer;
+
+    }
         // function for string to i8 conversions.
         pub fn string_to_i8 () -> i8 {
             let mut string_buffer = String::new();
