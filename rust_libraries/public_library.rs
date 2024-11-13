@@ -29,16 +29,13 @@ pub mod string_conversions {
                 .expect("Error: Failed to read string from stdin");
 
             let trimmed_string_buffer = string_buffer.trim();
-                    if !trimmed_string_buffer.is_empty() {
-                        break
-                    }
-                    else {
+                if !trimmed_string_buffer.is_empty() {
+                    return trimmed_string_buffer;
+                }
+                else {
                         println!("Error: Empty or invalid input");
-                    }
-                };
-
-        return string_buffer;
-
+                }
+            };
     }
         // function for string to i8 conversions.
         pub fn string_to_i8 () -> i8 {
