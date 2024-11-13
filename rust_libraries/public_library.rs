@@ -30,7 +30,7 @@ pub mod string_conversions {
 
             let trimmed_string_buffer = string_buffer.trim();
                 if !trimmed_string_buffer.is_empty() {
-                    return trimmed_string_buffer;
+                    return trimmed_string_buffer.to_string();
                 }
                 else {
                         println!("Error: Empty or invalid input");
