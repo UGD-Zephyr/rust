@@ -1,0 +1,1 @@
+/home/per/Programming/02_rust/03_study_plan/study_exercises/grok_3/target/debug/main: /home/per/Programming/02_rust/03_study_plan/study_exercises/grok_3/src/bin/main.rs /home/per/Programming/02_rust/03_study_plan/study_exercises/grok_3/src/lib/public_library.rs

@@ -1,0 +1,10 @@
+[package]
+name = "grok_6"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lib]
+name = "public_library"
+path = "src/lib/public_library.rs"
