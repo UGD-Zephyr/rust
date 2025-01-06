@@ -1,0 +1,1 @@
+/home/per/Github/01_cloned_repos/rust/rust_study_guide/grok_study_guide/grok_9/target/debug/libpublic_library.rlib: /home/per/Github/01_cloned_repos/rust/rust_study_guide/grok_study_guide/grok_9/src/lib/public_library.rs
