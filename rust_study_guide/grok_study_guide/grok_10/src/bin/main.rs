@@ -22,10 +22,20 @@ fn main(){
             let vector_element = string_to_u8();
                 sum.push(vector_element);
         }
+    // For this you gotta know closure and fold syntax
     let sum_of_vector_elements = sum.iter()
                                     .fold(0, |acc, &x| acc + x);
 
+    // For this you need to combine a match statement with closure and fold syntax
+    let sum_of_even_vector_elements = sum.iter()
+                                    .fold(0, |acc, &x| {
+        match x % 2{
+            0   => acc + x,
+            _   => acc,
+        }
+    });
+
     println!("The finished vector:      {:?}", sum);
     println!("Sum of the vector:        {}", sum_of_vector_elements);
-    //println!("Sum of only even numbers: {}", );
+    println!("Sum of only even numbers: {}", sum_of_even_vector_elements );
 } 
